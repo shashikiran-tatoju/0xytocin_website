@@ -1,0 +1,268 @@
+@font-face {
+    font-family: medium-oblique;
+    src: url(/src/fonts/Ocean\ Medium\ Oblique.otf);
+}
+@font-face {
+    font-family: ocean-semi-bold;
+    src: url(/src/fonts/Ocean\ SemiBold.otf);
+}
+@font-face {
+    font-family: ocean-medium;
+    src: url(/src/fonts/Ocean\ Medium.otf);
+}
+@font-face {
+    font-family: ocean-bold;
+    src: url(/src/fonts/Ocean\ Bold.otf);
+}
+
+
+*{
+    margin: 0;
+    font-family: ocean-medium;
+}
+body {
+    background: #201f20 !important;
+}
+
+.navbar-light .navbar-brand {
+    color: #befbff !important;
+}
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+.navbar-nav{
+    text-align: end;
+}
+.navbar-light .navbar-toggler{
+    border: unset !important;
+}
+.navbar-light .navbar-toggler-icon-2 {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='62' height='34' viewBox='0 0 62 34'%3E%3Cg id='Burger_Menu' data-name='Burger Menu' transform='translate(2.5 2.5)'%3E%3Cline id='Line_119' data-name='Line 119' x1='44' transform='translate(13 29)' fill='none' stroke='%23befbff' stroke-linecap='round' stroke-width='5'/%3E%3Cline id='Line_120' data-name='Line 120' x1='57' transform='translate(0 15)' fill='none' stroke='%23befbff' stroke-linecap='round' stroke-width='5'/%3E%3Cline id='Line_121' data-name='Line 121' x1='44' transform='translate(13)' fill='none' stroke='%23befbff' stroke-linecap='round' stroke-width='5'/%3E%3C/g%3E%3C/svg%3E%0A") !important;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    /* background-size: cover; */
+}
+.navbar-toggler-icon-2 {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.bg-light-1 {
+    --bs-bg-opacity: 1;
+    background-color: #201f20;
+}
+
+.card-img-overlay {
+    top: unset !important;
+}
+
+.web-studio {
+    color: #befbff;
+    transition: 0.5s;
+    cursor: pointer;
+    max-width: fit-content;
+    margin: 0 auto;
+    font-family: medium-oblique;
+    font-size: 30px;
+}
+
+.web-studio:hover {
+    text-shadow: 0 0 5px #befbff;
+}
+
+.card {
+    background-color: unset !important;
+}
+
+.row-take {
+    position: relative;
+    top: 72px;
+    justify-content: space-between;
+}
+
+.card-body-2{
+    position: absolute;
+    min-width: 48%;
+    top: 20%;
+}
+
+.card-title-2 {
+    border: 1px solid;
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 16px;
+    background: #201f20;
+    background-clip: padding-box;
+    padding: 5px;
+    color: #BEFBFF;
+    cursor: pointer;
+    transition: background 0.5s;
+    right: -19%;
+    top: -12px;
+    font-size: 42px;
+    font-family: ocean-semi-bold;
+    text-align: center;
+}
+
+.card-title-2::after {
+    position: absolute;
+    top: -2px; bottom: -2px;
+    left: -2px; right: -2px;
+    background: linear-gradient( to right, rgb(218, 143, 197), rgb(189, 251, 255));
+    content: '';
+    z-index: -1;
+    border-radius: 16px;
+}
+
+.card-title-2:hover {
+    color: #000000;
+    background: linear-gradient(to right, rgb(218, 143, 197), rgb(189, 251, 255));
+}
+
+.card-title-li {
+    margin-top: 3%;
+    padding-top: 10px;
+    color: #bdfbff;
+    font-family: ocean-semi-bold;
+    font-size: 33px;
+}
+
+g {
+    cursor: pointer;
+}
+
+path:hover {
+    fill: rgb(93, 93, 192);
+}
+
+.tri {
+    margin-top: -145px;
+    margin-left: auto;
+}
+
+/* Animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 7))
+    }
+}
+
+/* Styling */
+.slider {
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slid{
+    height: 422px;
+    position: relative;
+    top: -103px;
+}
+
+.slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 7);
+    justify-content: flex-end;
+}
+
+
+img,
+.slide-track:hover {
+    animation-play-state: paused;
+}
+.slid::before{
+    content: "TEAM";
+    font-size: 64px;
+    color: #BEFBFF;
+    padding:0 22px 0 44px;
+    z-index: 1;
+    position: absolute;
+    height:-webkit-fill-available;
+    background-color:#201f20;
+    font-family: ocean-bold;
+}
+
+.slide {
+    max-width: 250px;
+    margin: 0 14px;
+    position: relative;
+}
+.slide:hover{
+    box-shadow: 0 0 18px rgb(190, 251, 255);
+}
+.slide:hover::after{
+    content: "";
+    border: solid #BEFBFF;
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    left: 0;
+    width: 50%;
+}
+
+.collapsed-1{
+    width: 100%;
+}
+.collapsed-1::after{
+    content: "NASH";
+}
+.collapsed-1:hover + .collapse-1{
+    display: block;
+}
+.collapse-1{
+    display: none;
+    color: rgb(58, 49, 49); 
+    text-align: justify; 
+    background-color: #BEFFE5;
+    padding: 30px;
+    font-size:12px ;
+}
+
+g[data-type="innerShadowGroup"]:hover .shadow-hower{
+    filter: url(#Rectangle_60) !important;
+}
+image:hover{
+    filter: drop-shadow(0 0 5px #bdfdff);
+}
+g:hover{
+    stroke: rgb(93, 93, 192);
+}
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+    .card-title-2, .card-title-li{
+        font-size: 11px !important;
+    }
+    .card-body-2{
+        top: 0 !important;
+    }
+    
+}
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+    .row-take {
+        top: -4px;
+    }
+    .slide-track{
+        width: calc(250px * 2);
+    }
+    .slid::before{
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .card-title-2 {
+        font-size: 22px;
+    }
+    .slid{
+        top: 42px;
+    }
+}
